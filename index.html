@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Book App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📞 Phone Book</h1>
+
+    <!-- Add/Update Contact Form -->
+    <form id="contactForm" class="form-card">
+      <h2 id="formTitle">Add New Contact</h2>
+      <input type="hidden" id="contactId">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone Number" required>
+      <div class="btn-group">
+        <button type="submit" id="saveBtn">Save Contact</button>
+        <button type="button" id="cancelBtn" class="cancel">Cancel</button>
+      </div>
+    </form>
+
+    <!-- Search Bar -->
+    <input type="text" id="search" placeholder="🔍 Search contacts...">
+
+    <!-- Contacts List -->
+    <div id="contactsList" class="contacts-grid">
+      <p>Loading contacts...</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
